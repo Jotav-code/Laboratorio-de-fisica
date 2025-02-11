@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO DE FÍSICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1 class="titulo">Laboratorio de física</h1>
+            <p style="margin-top: 30px;"> <em>Este algoritmo foi criado com o intuito de agilizar o processo de cálculo de incertezas do <strong>TIPO A</strong>, do <strong>TIPO B</strong> e do <strong>TIPO C</strong>. É importante saber como funciona o cálculo antes de usar esse algoritmo, pois um entendimento adequado das incertezas é fundamental para a obtenção de resultados precisos e confiáveis em experimentos científicos, além de garantir a aplicação correta das fórmulas e a interpretação dos dados de maneira adequada. Use com moderação!</em></p>
+            <p style="margin-top: 30px;">Para melhor eficiencia, vamos usar os dados como uma matriz. <strong>Linhas X Colunas</strong>. <strong>Linhas</strong> será representada a quantidade de objetos que se quer medir, variações. <strong>Ex: </strong>
+            medir o tempo de queda livre de uma bola em diferentes alturas, linha 1 = 60cm, linha 2 = 30 cm. De forma análoga a <strong>Coluna</strong>, vai ser a quantidade de vezes que você mediu o tempo de queda.</p>
+            <p style="margin-top: 30px;">Digite o número de <strong>Linhas</strong> X <strong>Colunas</strong>: <input type="number" id="inputLine"> <strong>X</strong> <input type="number" id="inputColumn"> <button onclick="confirmar()">CONFIRMAR</button></p>
+            <p id="res"></p>
+            <p id="res2"></p>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
