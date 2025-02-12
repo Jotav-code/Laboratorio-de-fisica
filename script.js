@@ -15,7 +15,6 @@ const confirmar = () => {
     for (let i = 0; i < lineVector; i++) {
         // Cria um div para agrupar os inputs de cada linha
         let lineDiv = document.createElement('div');
-        let button = document.createElement('button'); // Botão não é usado aqui, pode ser removido
 
         // Loop para criar os inputs de cada coluna na linha atual
         for (let j = 0; j < vectorColumn; j++) {
@@ -38,6 +37,7 @@ const confirmar = () => {
     button.innerText = 'Confirmar'; // Texto do botão
     button.onclick = confirmar2; // Define a função a ser chamada ao clicar no botão
     result.appendChild(button); // Adiciona o botão ao resultado
+    document.getElementById('res2').innerHTML = ''
 };
 
 // Função que calcula as estatísticas (soma, média, desvio padrão e incerteza do tipo A)
@@ -96,5 +96,30 @@ const confirmar2 = () => {
     console.log("Médias das linhas:", mediasDasLinhas);
     console.log("Desvios padrão das linhas:", desviosPadrao);
 
-    
+    // Seleciona o elemento HTML onde os resultados serão exibidos
+    let resultado = document.getElementById('res2');
+    resultado.innerHTML = ''; // Limpa o conteúdo anterior de res2
+
+    // Loop para exibir os resultados de cada linha na página
+    for (let n = 0; n < lineVector; n++) {
+        // Cria um div para agrupar os resultados de cada linha
+        let divline = document.createElement('div');
+        divline.style.margin = '10px'; // Adiciona margem ao div
+
+        // Cria um parágrafo para exibir os resultados da linha atual
+        let res2 = document.createElement('p');
+        res2.style.backgroundColor = 'lightgrey'; // Define a cor de fundo
+        res2.style.color = 'black'; // Define a cor do texto
+        res2.style.border = 'solid black 2px'; // Adiciona uma borda
+        res2.style.fontFamily = 'arial'; // Define a fonte
+        res2.style.fontSize = '30px'; // Define o tamanho da fonte
+        res2.style.borderRadius = '9px'; // Adiciona bordas arredondadas
+        res2.style.textAlign = 'center'; // Centraliza o texto
+
+        // Preenche o parágrafo com os resultados da linha atual
+        res2.innerHTML = `<strong>O resultado da linha</strong> ${n + 1} é: Incerteza do tipo A: ${incertezaTipoA[n]} Média: ${mediasDasLinhas[n]}, Desvio padrão: ${desviosPadrao[n]} `;
+        divline.appendChild(res2); // Adiciona o parágrafo ao div da linha
+
+        resultado.appendChild(divline); // Adiciona o div da linha ao resultado
+    }
 };
