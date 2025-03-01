@@ -3,22 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LABORATORIO DE FÍSICA</title>
+    <title>João Soares</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon/icons8-calculation-85.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="center">
-            <h1 class="titulo">Laboratorio de física</h1>
-            <p style="margin-top: 30px;"> <em>Este algoritmo foi criado com o intuito de agilizar o processo de cálculo de incertezas do <strong>TIPO A</strong>, do <strong>TIPO B</strong> e do <strong>TIPO C</strong>. É importante saber como funciona o cálculo antes de usar esse algoritmo, pois um entendimento adequado das incertezas é fundamental para a obtenção de resultados precisos e confiáveis em experimentos científicos, além de garantir a aplicação correta das fórmulas e a interpretação dos dados de maneira adequada. Use com moderação!</em></p>
-            <p style="margin-top: 30px;">Para melhor eficiencia, vamos usar os dados como uma matriz. <strong>Linhas X Colunas</strong>. <strong>Linhas</strong> será representada a quantidade de objetos que se quer medir, variações. <strong>Ex: </strong>
-            medir o tempo de queda livre de uma bola em diferentes alturas, linha 1 = 60cm, linha 2 = 30 cm. De forma análoga a <strong>Coluna</strong>, vai ser a quantidade de vezes que você mediu o tempo de queda.</p>
-            <p style="margin-top: 30px;">Digite o número de <strong>Linhas</strong> X <strong>Colunas</strong>: <input type="number" id="inputLine"> <strong>X</strong> <input type="number" id="inputColumn"> <button onclick="confirmar()">CONFIRMAR</button></p>
-            <p id="res"></p>
-            <p id="res2"></p>
-        </div>    
-    </div>
+    <header>
+        <h2 class="portifolio">Portifo<span>lio</span></h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos-id">Projetos</a></li>
+                <li><a href="#faleComigo">Fale comigo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-1" id="home">
+        <div class="container">
+            <div class="item-1">
+                <h1>João <span>Soares</span></h1>
+                <h3>Programador Front-end</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2" id="sobre">
+        <img src="img/Foto minha.jpg" width="200px" height="200px" alt="">
+        <div class="item-1">
+            <h1>Sobre mim</h1>
+            <h2>Sou um programador front-end com experiência no desenvolvimento de aplicações utilizando HTML, CSS e JavaScript. Tenho sólidos conhecimentos nessas tecnologias e estou sempre buscando aprimorar minhas habilidades para criar interfaces modernas, responsivas e eficientes.</h2>
+            <a href="https://api.whatsapp.com/send?phone=5579996069679" target="_blank"><button>Entre em contato</button></a>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos-id">
+        <h1>Projetos</h1>
+        <div class="list">
+            <div class="item-1">
+                <img src="img/carrocel-removebg-preview.png" alt="">
+                <h2>Carrossel</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error rerum beatae ducimus, adipisci molestias aut animi expedita asperiores laudantium, doloribus deleniti. Officia blanditiis obcaecati optio, laborum voluptate culpa magnam aliquid.</p>
+                <a href="https://jotav-code.github.io/Carros/" target="_blank"><button>Ver projeto</button></a>
+            </div>
+            <div class="item-2">
+                <img src="https://cdn-icons-png.flaticon.com/128/755/755298.png" style="filter: invert(1);" alt="">
+                <h2>Projeto academia</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error rerum beatae ducimus, adipisci molestias aut animi expedita asperiores laudantium, doloribus deleniti. Officia blanditiis obcaecati optio, laborum voluptate culpa magnam aliquid.</p>
+                <a href="https://jotav-code.github.io/Projeto-academia/" target="_blank"><button>Ver projeto</button></a>
+            </div>
+            <div class="item-3">
+                <img src="https://cdn-icons-png.flaticon.com/128/5330/5330336.png" style="filter: invert(1);" alt="">
+                <h2>laboratorio de física</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error rerum beatae ducimus, adipisci molestias aut animi expedita asperiores laudantium, doloribus deleniti. Officia blanditiis obcaecati optio, laborum voluptate culpa magnam aliquid.</p>
+                <a href="https://jotav-code.github.io/Laboratorio-de-fisica/" target="_blank"><button>Ver projeto</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="faleComigo">
+        <h1>João Vitor Soares Bispo</h1>
+        <p>Para mais informações:</p>
+        <div class="sociais">
+            <a href="www.linkedin.com/in/vitor-undefined-82b029260" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=5579996069679" target="_blank"><img src="img/telefone.png" alt=""></a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
